@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: '{cipher}AQBnDd+Ga1cAVEQHA+eSq0SaHU64B+K75JZ028Ynm4cPzgJ1jjYHDIkLOxRis6/EXVWh5rP+uDxe/lW8oP2tiuBdF5AFF0KWfXa4bOw/Rbgvtisn7kDusfwvrWB7E4Cfsh4AZq96ueeNiNaJXq8ez+WU6NBBsO591PnsZ9UovuC51g534uCSHpLF2O7/J68k+MdrT2el/GrQDBHlgbmVbLksXxgBZgAhlVsE3zsN5Sw4d+MiEqDhPopfOJAVOtgF5yeJ2SF+8BB17silVwpEjsrU8bQl+gYaARngJxunwsAaqvNROc7h/DozdydSoOUI7zrXp13KKwi/TtLxhz6Ah9Xv/79HNMpR+LMZxJk5AUefaAuRIjhfKniR0356plpd1oQ='
+    # {cipher} : encrypt 된 값을 복호화 해서 사용하라는 메커니즘을 가지고 있음
+
+# 토큰은 application.yml에 공통으로 사용하자
+# token:
+#   expiration_time: 86400000
+#   secret: my_token_native_user_service
+
+gateway:
+  ip: 192.168.31.1
