@@ -12,5 +12,5 @@ gateway:
 
 order_service:
   url: http://ORDER-SERVICE/order-service/%s/orders #[ORDER-SERVICE] : Eureka 대시보드 이름으로 명시
-  excption:
+  exception:
     orders_is_empty: '주문리스트가 비었습니다.'
